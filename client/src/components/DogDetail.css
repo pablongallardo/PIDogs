@@ -1,0 +1,79 @@
+.danger {
+    color: rgba(248, 10, 10, 0.822); 
+    font-size: 15px;
+    font-weight: bold;
+}
+.inputDanger {
+    border-color: red;
+    list-style: none;
+}
+
+.background {
+    background-color: rgb(253, 226, 182);
+    background-image: url('https://res.cloudinary.com/demogorgonn/image/upload/v1660280707/chocolate-dachshund-perro-o-salchicha-fondo-de-patr_C3_B3n-sin-fisuras-con-corazones-y-huellas-pezu_C3_B1a-cachorro-dibujos-animados-199860476_qnr7gp.jpg');
+    background-size: 100%;
+padding: 20px;
+}
+
+.label {
+    font-family: Montserrat;
+    font-weight: bold;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.select {
+    width: 150px;
+    height: 40px;
+    display:inline-block;
+    justify-content: center;
+    border-color: solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Montserrat;
+    background-color: white;
+    list-style: none;
+}
+
+/* .buttoon{
+    display: flex;
+
+    background-image: url('https://res.cloudinary.com/demogorgonn/image/upload/v1660333915/cute-dogs-smile-welcome-vector-260nw-1629635215_yz0ilp.jpg');    background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-top: 190px;
+margin-left: 10x;    
+
+   width: 100px; 
+   position: absolute; 
+   padding: 20px;
+   margin-left: 450px;
+  
+} */
+.input {
+    font-family: Montserrat;
+    color: solid black;
+    border-color: solid black;
+    background-color: white;
+    border-radius: 999px;
+    color: solid black;
+    font-size: 15px;
+    font-weight: 800;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px; 
+ } 
+
+ .cont {
+    margin-top: 50px;
+    margin: 10px;
+    width: 300px;
+    height: 450px;
+    align-items: center; 
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(253, 226, 182);
+    border-radius: 5%;
+    margin-left: 34%;
+    padding:50px;
+ }

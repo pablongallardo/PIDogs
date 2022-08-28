@@ -1,0 +1,108 @@
+.danger {
+    color: rgba(248, 10, 10, 0.822);
+    font-size: 15px;
+    font-weight: bold;
+}
+.inputDanger {
+    border-color: red;
+    list-style: none;
+}
+
+.backgrou {
+   
+    margin-left: 450px;
+    /* background-size: 100%;
+    padding: 240px; */
+}
+
+.label {
+    font-family: Montserrat;
+    font-weight: bold;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.select {
+    width: 150px;
+    height: 40px;
+    display:inline-block;
+    justify-content: center;
+    border-color: solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Montserrat;
+    background-color: white;
+    list-style: none;
+}
+
+.butto {
+    font-family: Montserrat;
+    color: solid black;
+    border-color: solid black;
+    background-color: rgb(246, 255, 126);
+    border-radius: 999px;
+    color: solid black;
+    font-size: 1px;
+    font-weight: 800;
+    width: 70px;
+    height: 60px;
+    
+        display: flex;
+    
+        background-image: url('https://res.cloudinary.com/demogorgonn/image/upload/v1660333915/cute-dogs-smile-welcome-vector-260nw-1629635215_yz0ilp.jpg');    background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       margin-top: 50px;
+    margin-left: 10x;    
+    
+       width: 100px; 
+       position: absolute; 
+       padding: 20px;
+       margin-left: 450px;
+      
+    
+}
+
+.input {
+    font-family: Montserrat;
+    color: solid black;
+    border-color: solid black;
+    background-color: white;
+    border-radius: 999px;
+    color: solid black;
+    font-size: 15px;
+    font-weight: 800;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+  
+.butn {
+    font-family: Montserrat;
+    color: solid black;
+    border-color: solid black;
+    background-color: rgb(246, 255, 126);
+    border-radius: 999px;
+    color: solid black;
+    font-size: 1px;
+    font-weight: 800;
+    width: 70px;
+    height: 60px;
+    
+        display: flex;
+    
+        background-image: url('https://res.cloudinary.com/demogorgonn/image/upload/v1660333915/cute-dogs-smile-welcome-vector-260nw-1629635215_yz0ilp.jpg');    background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       margin-top: 10px;
+    margin-left: 10x;    
+    
+       width: 50px; 
+       /* height: 500px; */
+       position: absolute; 
+       padding: 20px;
+       margin-left: 250px;
+      
+      
+    
+}

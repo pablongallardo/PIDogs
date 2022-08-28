@@ -1,0 +1,96 @@
+/* .backgroun { */
+    /* background-color: rgb(253, 226, 182); */
+    /* background-image: url('https://res.cloudinary.com/demogorgonn/image/upload/v1660280707/chocolate-dachshund-perro-o-salchicha-fondo-de-patr_C3_B3n-sin-fisuras-con-corazones-y-huellas-pezu_C3_B1a-cachorro-dibujos-animados-199860476_qnr7gp.jpg'); */
+    /* background-size: 100%; */
+/* padding: 20px; */
+/* } */
+
+.text {
+    padding: 10px;
+    font-size: 25px;
+    color: #2C3E50;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-family: "Montserrat";
+   
+}
+.text2 {
+    font-size: 20px;
+    color: #2C3E50;
+    font-family: "Montserrat";
+}
+.back {
+    background-color: rgba(248, 227, 36, 0.6);
+    background-attachment: scroll;
+    
+}
+.contenedor {
+    margin-top: 50px;
+    margin: 10px;
+    width: 300px;
+    height: 450px;
+    align-items: center; 
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(253, 226, 182);
+    border-radius: 5%;
+    /* padding-top: 100px; */
+    /* padding-left: 5px;
+    padding-right: 10px;
+    justify-content:center;
+    margin-left: 105px; */
+}
+
+.contenedor:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgb(196, 192, 192);
+}
+
+.image {
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 200px;
+    border-color: black;
+    border-radius: 20%;
+    justify-content: center;
+}
+
+.direccion {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding: 10px;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    margin-left: 300px;
+}
+  
+.pagination li {
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: rgb(235, 129, 43);
+    border-radius: 10%;
+}
+  
+.pagination li:hover {
+    background-color: transparent;
+    color: rgb(105, 89, 89);
+    transform: scale(1.10);
+    box-shadow: 0 5px 10px rgb(196, 192, 192);
+
+}
+.nav{
+    padding-right: 900px;
+    margin-left: 550px;
+    text-align: center;
+    display: block ruby;
+    padding-top:20px
+}
+.barra{
+    display: flex;
+}

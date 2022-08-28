@@ -1,0 +1,18 @@
+
+
+
+.btn{
+    display: flex;
+
+    background-image: url('https://res.cloudinary.com/demogorgonn/image/upload/v1660333915/cute-dogs-smile-welcome-vector-260nw-1629635215_yz0ilp.jpg');    background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-top: 190px;
+margin-left: 9000x;    
+
+   width: 100px; 
+   position: absolute; 
+   padding: 10%;
+   margin-left: 450px;
+  
+}
