@@ -1,6 +1,7 @@
 require('dotenv').config();
 const { Router } = require ('express');
 const router = Router();
+var cors = require('cors')
 const axios = require('axios');
 
 const { Temperamento} =require('../db.js')
@@ -9,7 +10,7 @@ const {
     URL_API
 } = process.env;
 
-router.get('/', async (req, res) => { // hecha!!!
+router.get('/',cors(), async (req, res) => { // hecha!!!
     try {
         const hayDatos = await Temperamento.findAll()
         if (!hayDatos.length) {

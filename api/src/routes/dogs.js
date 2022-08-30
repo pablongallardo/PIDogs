@@ -7,11 +7,12 @@ require("dotenv").config();
 const { API_KEY, API } = process.env;
 const { Sequelize, Op } = require("sequelize");
 const axios = require("axios");
+var cors = require('cors')
 
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
-router.get('/', async (req, res, next) => {
+router.get('/',cors(), async (req, res, next) => {
     const { name } = req.query;
     if (!name) {
       try {

@@ -3,6 +3,8 @@ const { Dog, Temperamento} = require('../db');
 const router = Router();
 const { Sequelize, UUID } = require("sequelize");
 const { v4: uuidv4 } = require('uuid');
+var cors = require('cors')
+//npm i cors, y agregar a cada ruta del back cors(),
 
 const imageValidate = (URL) => {
     const regex = new RegExp(/(https?:\/\/.*\.(?:png|jpg|gif))/);
@@ -11,7 +13,7 @@ const imageValidate = (URL) => {
   };
 
 
-router.post('/', async(req, res)=>{ // hecha!!
+router.post('/', cors(), async(req, res)=>{ // hecha!!
     let {name, height, weight, life_span, image, temperamentos} = req.body
     if(!name || !height || !weight) return res.status(404).send({mensaje: 'Required data missing'})
     try {        
