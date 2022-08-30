@@ -17,7 +17,7 @@ export const CLEAR_DETAIL = 'CLEAR_DETAIL';
  export const FILTERBYTEMPS = 'FILTERBYTEMPS';
  export const ORDERBYTHEHEAVY = "ORDER_BY_THE_HEAVY";
 export const ORDERBYTHELIGHT = "ORDER_BY_THE_LIGHT";
-
+//declaro constantes
 const URL = "http://localhost:3001";
 const URL_DOGS = URL + '/dogs';
 // const URL_DB = URL + '/dog';
