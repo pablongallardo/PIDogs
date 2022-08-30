@@ -18,7 +18,7 @@ export const CLEAR_DETAIL = 'CLEAR_DETAIL';
  export const ORDERBYTHEHEAVY = "ORDER_BY_THE_HEAVY";
 export const ORDERBYTHELIGHT = "ORDER_BY_THE_LIGHT";
 //declaro constantes
-const URL = "https://pid-ogs-kohl.vercel.app/";
+const URL = "http://localhost:3001";
 const URL_DOGS = URL + '/dogs';
 // const URL_DB = URL + '/dog';
 // const URL_TEMPS = URL +'/temperament';
@@ -42,7 +42,7 @@ export function getAllDogs() {
 
 export const getDogDetail = (id) => async dispatch => {
     try {
-        const res = await axios('https://pid-ogs-kohl.vercel.app/' + id);    
+        const res = await axios('http://localhost:3001/dogs/' + id);    
         // const res = await axios(`${URL_DOGS}/${id}`);  
         return dispatch({type:GET_DOG_DETAIL, payload :res.data})
         
@@ -98,7 +98,7 @@ export function filterTemperament(temp){
 export function searchBar(name) {
     return async function(dispatch) {
         try {
-            var response = await axios.get(`https://pid-ogs-kohl.vercel.app/dogs?name=${name}`);
+            var response = await axios.get(`http://localhost:3001/dogs?name=${name}`);
             console.log(response)
             return dispatch({type: SEARCH_DOG, payload: response.data});
 
@@ -108,17 +108,17 @@ export function searchBar(name) {
     }
 }
 
-// export function getTemperaments(){
-//    return async function(dispatch) {
-//     try{
-//     const r = await axios("https://pid-ogs-kohl.vercel.app/temperament")
-//     const res = r.data
-//     return dispatch({ type:GET_TEMPERAMENTS, payload: res})
-//    } catch (error) {
-//     return (error => console.log("Error    --->", error))
-//    }
-//    }
-// }
+export function getTemperaments(){
+   return async function(dispatch) {
+    try{
+    const r = await axios("http://localhost:3001/temperament")
+    const res = r.data
+    return dispatch({ type:GET_TEMPERAMENTS, payload: res})
+   } catch (error) {
+    return (error => console.log("Error    --->", error))
+   }
+   }
+}
 
 export function createDog(dog){
     return {
@@ -151,7 +151,7 @@ export function filterBy(value) {
 }
 export function getHeaviest() {
     return function (dispatch) {
-        return axios.get('hhttps://pid-ogs-kohl.vercel.app/dogs')
+        return axios.get('http://localhost:3001/dogs')
             .then(dog => {
                 const orderHeaviest = dog.data.sort((b, a) => {
                     if (typeof dog.data.id === 'string') {
@@ -174,7 +174,7 @@ export function getHeaviest() {
 
 export function getLightiest() {
     return function (dispatch) {
-        return axios.get('https://pid-ogs-kohl.vercel.app/dogs')
+        return axios.get('http://localhost:3001/dogs')
             .then(dog => {
                 const orderLightiest = dog.data.sort((a, b) => {
                     if (typeof dog.data.id === 'string') {

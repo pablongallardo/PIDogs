@@ -86,18 +86,18 @@ export function Home ()  {
     }
     
 
-    // const url ='https://res.cloudinary.com/demogorgonn/image/upload/v1659487481/samples/animals/kisspng-dogue-de-bordeaux-english-mastiff-bulldog-cane-cor-french-bulldog-puppy-cartoon-5b559279745b95.9216208515323347134766_drdpuu.jpg'
-    // // eslint-disable-next-line
-    // dogs?.map((e) =>{
-    //     // console.log(dogs)
-    //     if(e.id.length > 4){
-    //       e.image = {url}
-    //       e.temperament= ""
-    //       for(let i = 0; i<e.temperament.length; i++){
-    //        e.temperament += e.temperament[i].name.toString() + ", "
-    //       }
-    //    }
-    // })
+    const url ='https://res.cloudinary.com/demogorgonn/image/upload/v1659487481/samples/animals/kisspng-dogue-de-bordeaux-english-mastiff-bulldog-cane-cor-french-bulldog-puppy-cartoon-5b559279745b95.9216208515323347134766_drdpuu.jpg'
+    // eslint-disable-next-line
+    dogs?.map((e) =>{
+        // console.log(dogs)
+        if(e.id.length > 4){
+          e.image = {url}
+          e.temperament= ""
+          for(let i = 0; i<e.temperament.length; i++){
+           e.temperament += e.temperament[i].name.toString() + ", "
+          }
+       }
+    })
     
     function renderData(dogs) {
         return (
