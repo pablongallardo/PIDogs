@@ -9,6 +9,7 @@ const { Temperamento} =require('../db.js')
 const {
     URL_API
 } = process.env;
+router.use(cors())
 
 router.get('/',cors(), async (req, res) => { // hecha!!!
     try {
