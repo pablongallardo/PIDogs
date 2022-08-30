@@ -18,7 +18,7 @@ export const CLEAR_DETAIL = 'CLEAR_DETAIL';
  export const ORDERBYTHEHEAVY = "ORDER_BY_THE_HEAVY";
 export const ORDERBYTHELIGHT = "ORDER_BY_THE_LIGHT";
 //declaro constantes
-const URL = "https://vercel.com/pablongallardo/pid-ogs";
+const URL = "https://pid-ogs-kohl.vercel.app/";
 const URL_DOGS = URL + '/dogs';
 // const URL_DB = URL + '/dog';
 // const URL_TEMPS = URL +'/temperament';
