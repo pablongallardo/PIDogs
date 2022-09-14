@@ -21,7 +21,7 @@ export const ORDERBYTHELIGHT = "ORDER_BY_THE_LIGHT";
 const URL = "http://localhost:3001";
 const URL_DOGS = URL + '/dogs';
 // const URL_DB = URL + '/dog';
-// const URL_TEMPS = URL +'/temperament';
+ const URL_TEMPS = URL +'/temperament';
 
 export function getAllDogs() {
     return async function (dispatch) {
@@ -42,7 +42,7 @@ export function getAllDogs() {
 
 export const getDogDetail = (id) => async dispatch => {
     try {
-        const res = await axios('http://localhost:3001/dogs/' + id);    
+        const res = await axios(URL_DOGS + id);    
         // const res = await axios(`${URL_DOGS}/${id}`);  
         return dispatch({type:GET_DOG_DETAIL, payload :res.data})
         
@@ -95,23 +95,23 @@ export function filterTemperament(temp){
 //         }
 //     }
 // }
-export function searchBar(name) {
-    return async function(dispatch) {
-        try {
-            var response = await axios.get(`http://localhost:3001/dogs?name=${name}`);
-            console.log(response)
-            return dispatch({type: SEARCH_DOG, payload: response.data});
+// export function searchBar(name) {
+//     return async function(dispatch) {
+//         try {
+//             var response = await axios.get(URL_DOGS?name=${name});
+//             console.log(response)
+//             return dispatch({type: SEARCH_DOG, payload: response.data});
 
-        } catch (error) {
-            return alert('Dog not Found!');
-        }
-    }
-}
+//         } catch (error) {
+//             return alert('Dog not Found!');
+//         }
+//     }
+// }
 
 export function getTemperaments(){
    return async function(dispatch) {
     try{
-    const r = await axios("http://localhost:3001/temperament")
+    const r = await axios(URL_TEMPS)
     const res = r.data
     return dispatch({ type:GET_TEMPERAMENTS, payload: res})
    } catch (error) {
@@ -151,7 +151,7 @@ export function filterBy(value) {
 }
 export function getHeaviest() {
     return function (dispatch) {
-        return axios.get('http://localhost:3001/dogs')
+        return axios.get(URL)
             .then(dog => {
                 const orderHeaviest = dog.data.sort((b, a) => {
                     if (typeof dog.data.id === 'string') {
@@ -174,7 +174,7 @@ export function getHeaviest() {
 
 export function getLightiest() {
     return function (dispatch) {
-        return axios.get('http://localhost:3001/dogs')
+        return axios.get(URL_DOGS)
             .then(dog => {
                 const orderLightiest = dog.data.sort((a, b) => {
                     if (typeof dog.data.id === 'string') {

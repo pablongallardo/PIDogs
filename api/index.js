@@ -22,9 +22,10 @@ const { conn } = require('./src/db.js');
 const cors = require('cors')
 const PORT = process.env.PORT || 3001
 
-const whiteList = ['http://localhost:3000', 'http://localhost:3001'];
 
 server.use(cors())
+
+
 
 // Syncing all the models at once.
 conn.sync({ force:false }).then(() => {
